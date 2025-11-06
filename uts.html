@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Han Guksu Seoul in a Bowl</title>
+    <link rel="icon" href="logo.jpeg">
+    <link rel="stylesheet" href="uts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<header>
+    <h1>
+    </h1>
+</header>
+<nav>
+    <a href="uts.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="registration.html">Registration</a>
+    <a href="location.html">Location</a>
+</nav>
+<body>
+    <button-mode onclick="toggledarkmode()">Dark Mode</button-mode>
+
+    <script>
+        alert("Halo, Selamat Datang Di Han Guksu!")
+    </script>
+
+    <script>
+        let konfirmasi = confirm("Apakah Anda Ingin Melanjutkannya?");
+        if (konfirmasi) {
+            alert ("Anda memilih Yes");
+        }    else {
+            alert ("Anda memilih No")
+        }
+    </script>
+
+    <script>
+        let nama = prompt("Siapa nama anda")
+        alert ("Halo, " + nama + "!")
+    </script>
+
+    <div style="margin-left: 30px;">
+    <h2>Jakarta, Indonesia</h2>
+    <span id="Jakarta"></span>
+  </div>
+
+  <script>
+    function updatetime() {
+    let now = new Date();
+    document.getElementById("Jakarta").innerText = now.toLocaleTimeString("id-ID", {timeZone: "Asia/Jakarta"});
+    }
+    setInterval(updatetime, 1000)
+    updatetime();
+  </script>
+
+    <p>Han Guksu brings you the simple, authentic taste of Korea. Every bowl is made with fresh ingredients and signature seasonings that hit the perfect balance of flavor. It’s a cozy spot to enjoy warm noodles, unwind with friends, or take a quiet break from a busy day.</p>
+    <br>
+    <div class="display-section">
+        <div class="text-box-1">
+            <div class="p1">Seoul in a Bowl</div>
+            <div class="p2">Authentic Korean noodle house in Indonesia </div>
+        </div>
+        <img src="logo.jpeg" alt="display">
+    </div>
+    <p>Temukan menu favorit kamu — mulai dari Seafood Jjamppong yang pedas menggoda, Jjajangmyeon dengan saus hitam khas Korea, hingga Kalguksu yang lembut dan menenangkan. Setiap hidangan dibuat dengan resep otentik dan sentuhan modern agar cocok di lidah semua kalangan.</p>
+    <section class="bestseller">
+        <div class="bestseller-grid">
+           <div class="bestseller-item">
+            <img src="jjajangmyeon.jpg" alt="beset seller 1">
+           </div>
+           <div class="bestseller-item">
+            <img src="sundubu-jjigae.jpg" alt="beset seller 1">
+           </div> 
+           <div class="bestseller-item">
+            <img src="jjampong seafood.jpg" alt="beset seller 1">
+           </div> 
+        </div>
+    </section>
+
+    <script src="uts.js"></script>
+
+</body>
+<br>
+<br>
+<footer>
+    <div class="footer-social">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/han_guksu.id?igsh=MW94OW00cG5xNGJ2Yw==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/6285710590652" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    </div>
+    <div class="p4"> © 2025 Han Guksu Seoul in a Bowl — Taragroup.id — UTS Naila</div>
+  </footer>
+</html>
